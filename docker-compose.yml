@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  my-cron-service:
+    image: my-cron-container
+    deploy:
+      placement:
+        constraints: [node.labels.name == w1] 
+    volumes:
+      - usr-lib-volume:/usr/lib
+      - cron-volume:/etc/cron.d
+    ports:
+      - "3001:3001"
+      - "3002:3002"
+
+volumes:
+  usr-lib-volume:
+  cron-volume:
+

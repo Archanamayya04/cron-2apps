@@ -1,2 +1,0 @@
-10 19 * * * /usr/bin/supervisorctl start app1
-
