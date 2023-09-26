@@ -1,0 +1,13 @@
+{
+  "name": "app2",
+  "version": "1.0.0",
+  "description": "Node.js App 2",
+  "main": "app2.js",
+  "scripts": {
+    "start": "node app2.js"
+  },
+  "author": "Your Name",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
